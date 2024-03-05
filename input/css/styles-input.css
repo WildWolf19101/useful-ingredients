@@ -1,0 +1,107 @@
+input {
+    width: 100%;
+}
+
+
+/* search */
+.search {
+    max-width: 500px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.search-input {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 15px;
+    padding-left: 55px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all 0.2s linear;
+}
+
+.search-input:focus {
+    border-color: #2979ff;
+    background-color: transparent;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+/* style input */
+.input-styles {
+    max-width: 500px;
+    margin: 25px auto;
+    /* display: block; */
+    position: relative;
+}
+
+.input-styles span {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #333;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.2s linear;
+}
+
+.input-styles input {
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all 0.2s linear;
+}
+
+/* 
+.input-styles input:not(:placeholder-shown)~span,
+.input-styles input:focus~span {
+    top: 0;
+    left: 10px;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+.input-styles input:focus {
+    border-color: #f62682;
+    background-color: transparent;
+}
+*/
+
+/* input 1 */
+.name input:not(:placeholder-shown)~span,
+.name input:focus~span {
+    /* display: none; */
+    top: 0;
+    left: 10px;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+.name input:focus {
+    border-color: #f62682;
+    background-color: transparent;
+}
+
+/* input 2 */
+.email input:not(:placeholder-shown)~span,
+.email input:focus~span {
+    display: none;
+}
+
+.email input:focus {
+    border-color: #f62682;
+    background-color: transparent;
+}
