@@ -1,0 +1,33 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.slide-list {
+    position: relative;
+    margin: auto;
+}
+
+.slide-image {
+    object-fit: cover;
+    height: 400px;
+}
+
+.fade {
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
