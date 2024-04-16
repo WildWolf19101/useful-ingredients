@@ -1,0 +1,31 @@
+.scroll-progress {
+    height: 5px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 106, 1) 0%, rgba(173, 13, 74, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    transition: width 0.25s linear;
+    z-index: 9999;
+}
+
+.box-text {
+    max-width: 50rem;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.box-text p {
+    margin: 25px 0;
+}
+
+.box-text img {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.box-text img.show {
+    opacity: 1;
+    visibility: visible;
+}
